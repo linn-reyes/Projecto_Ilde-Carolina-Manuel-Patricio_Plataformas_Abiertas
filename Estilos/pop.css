@@ -38,7 +38,6 @@ h3 {
     letter-spacing: 2px;
 }
 
-/* ---------- 4. MENÚ DE NAVEGACIÓN ---------- */
 .TituloPagina__MenuLateral {
     background-color:rgb(251, 197, 2);
     padding: 10px 0;
@@ -57,9 +56,6 @@ h3 {
     font-size: 18px;
     font-weight: bold;
     padding: 6px 16px;
-    border: 2px solid rgb(255, 0, 136);
-    border-radius: 999px;
-    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .TituloPagina__MenuLateral a:hover {
@@ -67,7 +63,6 @@ h3 {
     color: #ffffff;
 }
 
-/* ---------- 5. ENCABEZADO DEL ARTÍCULO ---------- */
 header {
     display: flex;
     flex-direction: column;
@@ -107,16 +102,7 @@ header h5 {
     padding: 6px 16px;
     background-color: rgb(13, 0, 7);
     color: rgb(255, 241, 248);
-    border-radius: 999px;
     font-size: 14px;
-}
-
-/* Ocultamos los <br> y <hr>: ahora el espacio lo da el CSS */
-header br,
-header hr,
-main br,
-main hr {
-    display: none;
 }
 
 /* ---------- 6. CONTENIDO PRINCIPAL (tarjetas) ---------- */
