@@ -73,13 +73,6 @@ header {
     text-align: center;
 }
 
-header img {
-    display: block;
-    max-height: 480px;
-    object-fit: cover;
-    border-bottom: 6px solid rgb(251, 197, 2);
-}
-
 header h2 {
     margin: 10px 20px 0;
     color: rgb(254, 249, 178);
