@@ -108,7 +108,6 @@
 .content-img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
     display: block;
     margin: 0 auto;
 }
@@ -124,8 +123,7 @@
     background-color: #0c0c16;
 }
 
-.footer__content {
-    display: flex;
+.footer-content {
     flex-direction: column;
     align-items: center;
     gap: 8px;
@@ -133,15 +131,11 @@
 }
 
 .footer-title {
-    margin: 0;
     font-family: "Impact";
-    font-size: 1.5rem;
-    font-weight: normal;
-    color: var(--color-acento);
+    color: white;
 }
 
-.footer__text {
-    margin: 0;
+.footer-text {
     color: #a9a9c4;
 }
 
@@ -149,8 +143,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px 32px;              
-    margin-top: 8px;
 }
 /* Si quieres, en nuestro procsimo paso puedo ayudarte
 a sobornar a tu profesor para sacar mejores calificaciones xd*/
