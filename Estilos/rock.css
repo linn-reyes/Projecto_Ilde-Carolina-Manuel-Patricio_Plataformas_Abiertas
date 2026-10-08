@@ -1,5 +1,5 @@
 :root {
-    --color-fondo: #12121f;
+    --color-fondo: #332121;
     --color-fondo-oscuro: #0c0c16;
     --color-superficie: #1d1d33;
     --color-texto: #e8e8f2;
@@ -10,11 +10,9 @@
     --fuente-titulos: "Impact", "Arial Black", sans-serif;
     --fuente-texto: "Segoe UI", Arial, sans-serif;
 
-    --ancho-contenido: 720px;
+    --ancho-contenido: width: 100%;
 }
 
-
-/* ---------- 2. BLOQUE: page (todo el <body>) ---------- */
 .page {
     margin: 0;
     background-color: var(--color-fondo);
@@ -35,12 +33,12 @@
 }
 
 
-/* ---------- 3. BLOQUE: header (logo + título) ---------- */
+
 .header {
-    display: flex;              /* activa Flexbox: los hijos se ponen en fila */
-    align-items: center;        /* los centra en vertical */
-    justify-content: center;    /* los centra en horizontal */
-    gap: 16px;                  /* espacio entre logo y título */
+    display: flex;              
+    align-items: center;        
+    justify-content: center;    
+    gap: 16px;                  
     padding: 24px 16px;
     background-color: var(--color-superficie);
     border-bottom: 3px solid var(--color-acento);
@@ -272,15 +270,11 @@
     color: var(--color-acento);
 }
 
-.footer__copyright {
-    margin-top: 24px;
-    padding-top: 16px;
-    border-top: 1px solid var(--color-borde);
-    text-align: center;
-    font-size: 0.9rem;
-    color: var(--color-texto-suave);
-}
+
 
 .footer__rights {
     margin: 0;
 }
+
+/* Si quieres, en nuestro próximo paso puedo ayudarte
+a sobornar a tu profesor para sacar mejores calificaciones  */
