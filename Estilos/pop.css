@@ -1,53 +1,152 @@
 body {
+    margin: 0;
     background-color: rgb(255, 242, 0);
-}
-
-header {
-    background-color: rgb(255, 0, 136);
+    font-family: Arial, sans-serif;
+    color: rgb(13, 0, 7);
 }
 
 h1,
 h2,
 h3 {
-    color: rgb(251, 197, 2);
     font-family: "Arial Black", sans-serif;
-    padding: 1px;
+}
+
+.TituloPagina {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(13, 0, 7);
+    padding: 10px 20px;
+}
+
+.TituloPagina img {
+    width: 150px;
+    height: auto;
+}
+
+
+.TituloPagina::after {
+    content: "";
+    width: 150px;
+}
+
+.TituloPagina h1 {
+    margin: 0;
+    color: rgb(255, 0, 136);
+    font-size: 30px;
     text-align: center;
+    letter-spacing: 2px;
+}
+
+/* ---------- 4. MENÚ DE NAVEGACIÓN ---------- */
+.TituloPagina__MenuLateral {
+    background-color:rgb(251, 197, 2);
+    padding: 10px 0;
+}
+
+.TituloPagina__MenuLateral aside {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.TituloPagina__MenuLateral a {
+    color:rgb(255, 0, 136);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 6px 16px;
+    border: 2px solid rgb(255, 0, 136);
+    border-radius: 999px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.TituloPagina__MenuLateral a:hover {
+    background-color: rgb(255, 0, 136);
+    color: #ffffff;
+}
+
+/* ---------- 5. ENCABEZADO DEL ARTÍCULO ---------- */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    background-color: rgb(255, 0, 136);
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+header img {
+    display: block;
+    max-height: 480px;
+    object-fit: cover;
+    border-bottom: 6px solid rgb(251, 197, 2);
+}
+
+header h2 {
+    margin: 10px 20px 0;
+    color: rgb(254, 249, 178);
     font-size: 40px;
+    line-height: 1.2;
+    text-shadow: 4px 4px 0 rgb(13, 0, 7);
+}
+
+header h4 {
+    max-width: 800px;
+    margin: 0 20px;
+    color: rgb(255, 241, 248);
+    font-size: 20px;
+    font-weight: normal;
     line-height: 1.6;
 }
 
-h4,
-p {
+header h5 {
+    margin: 0;
+    padding: 6px 16px;
+    background-color: rgb(13, 0, 7);
     color: rgb(255, 241, 248);
-    font-family: "Arial", sans-serif;
-    padding: .5px;
-    text-align: center;
-    font-size: 24px;
-    line-height: 1;
+    border-radius: 999px;
+    font-size: 14px;
 }
 
-h5,
-small {
-    color: rgb(228, 243, 250);
-    font-family: "Arial", sans-serif;
-    padding: .5px;
-    text-align: center;
-    font-size: 15px;
-    line-height: 1;
+/* Ocultamos los <br> y <hr>: ahora el espacio lo da el CSS */
+header br,
+header hr,
+main br,
+main hr {
+    display: none;
 }
 
-a {
-    color: rgb(254, 249, 178);
+/* ---------- 6. CONTENIDO PRINCIPAL (tarjetas) ---------- */
+main {
     display: flex;
-    justify-content: center;
-    font-family: "Arial", sans-serif;
-    padding: .5px;
-    text-align: center;
-    font-size: 24px;
-    line-height: 1;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 30px 40px;
+    border: 3px solid rgb(13, 0, 7);
+    border-radius: 20px;
+    box-shadow: 8px 8px 0 rgb(13, 0, 7);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+main section:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0 rgb(13, 0, 7);
+}
+
+/* Tus mismos tonos de rosa, de fuerte a suave */
 .Tipo__Musica {
     background-color: rgb(255, 34, 152);
 }
@@ -68,77 +167,88 @@ a {
     background-color: rgb(248, 153, 201);
 }
 
-footer {
-    background-color: rgb(255, 0, 136);
-}
-
-/* Estilos para la imagen */
-.TituloPagina img {
-    width: 150px;
-    height: auto;
-    grid-column: 1;
-    /* Fuerza a la imagen a ir al extremo izquierdo */
-    justify-self: start;
-    /* Se pega completamente al borde izquierdo */
-}
-
-/* Estilos para el Título */
-.TituloPagina h1 {
-    grid-column: 2;
-    /* Fuerza al texto a ir al centro exacto */
-    margin: 0;
-    color: rgb(255, 0, 136);
-    font-family: "Arial Black", sans-serif;
-    font-size: 30px;
-    /* Tamaño de fuente más grande */
+/* ---------- 7. TEXTOS DENTRO DE LAS TARJETAS ---------- */
+main h2 {
+    margin: 0 0 6px;
+    color: rgb(254, 249, 178);
+    font-size: 32px;
+    line-height: 1.2;
     text-align: center;
-    /* Centra el texto horizontalmente */
+    text-shadow: 3px 3px 0 rgb(13, 0, 7);
 }
 
-.TituloPagina {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    /* 3 columnas: izquierda, centro y derecha */
-    align-items: center;
-    /* Centra verticalmente ambos elementos */
-    background-color: rgb(13, 0, 7);
-    padding: 10px 20px;
-}
-
-/* Estilos para la barra de navegación */
-
-.TituloPagina__MenuLateral {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(251, 197, 2);
-    padding: 10px 0;
-    font-family: "Arial", sans-serif
-}
-
-.TituloPagina__MenuLateral a {
-    color: rgb(255, 0, 136);
-    text-decoration: none;
-    margin: 0 15px;
+main p {
+    margin: 0;
+    color: rgb(13, 0, 7);
     font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
 }
 
-.TituloPagina__MenuLateral a:hover {
-    text-decoration: underline;
-    color: #fdfcfc;
+/* Efecto "marcatexto" en las negritas */
+main strong {
+    background-color: rgb(254, 249, 178);
+    padding: 0 4px;
+    border-radius: 4px;
 }
 
-/* Estilos generales del Footer */
+/* Enlaces dentro del texto (ej. "rock and roll") */
+main p a {
+    color: rgb(211, 3, 114);
+    font-weight: bold;
+    text-decoration: underline wavy;
+}
+
+/* ---------- 8. IMÁGENES DE LAS TARJETAS ---------- */
+main section > a {
+    display: block;
+}
+
+main section img {
+    display: block;
+    margin-top: 10px;
+    border: 3px solid rgb(13, 0, 7);
+    border-radius: 14px;
+    transition: transform 0.2s ease;
+}
+
+main section a:hover img {
+    transform: scale(1.03) rotate(-1deg);
+}
+
+/* ---------- 9. BOTÓN "REGRESA AL INICIO" ---------- */
+.Exponentes__Pop > strong {
+    background-color: transparent;
+}
+
+a[href="#Inicio de pagina"] {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 22px;
+    background-color:rgb(255, 0, 136);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    border: 3px solid rgb(13, 0, 7);
+    border-radius: 999px;
+    box-shadow: 4px 4px 0 rgb(13, 0, 7);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+a[href="#Inicio de pagina"]:hover {
+    background-color: rgb(251, 197, 2);
+    color: rgb(13, 0, 7);
+}
+
+/* ---------- 10. FOOTER ---------- */
 .PiePagina {
     background-color: rgb(255, 0, 136);
-    /* Tono azul oscuro nocturno */
     color: #ffffff;
-    padding: 40px 20px 20px 20px;
-    border-top: 2px solid rgb(255, 0, 136);
-    /* Línea sutil superior para separarlo */
+    padding: 40px 20px 20px;
+    border-top: 6px solid rgb(251, 197, 2);
     font-family: Arial, sans-serif;
 }
 
-/* Contenido centrado */
 .Contenido__PiePagina {
     max-width: 800px;
     margin: 0 auto;
@@ -146,24 +256,23 @@ footer {
 }
 
 .Contenido__PiePagina h3 {
-    font-size: 1.6rem;
     margin-bottom: 10px;
     color: rgb(251, 197, 2);
+    font-size: 1.6rem;
 }
 
-.Contenido__PiePagina .subtitulo {
+.PiePagina__subtitulo {
     color: rgb(254, 249, 178);
     font-size: 0.95rem;
     margin-bottom: 25px;
 }
 
-/* Bloque con los datos de contacto en una cajita elegante */
 .PiePagina__DatoContacto {
+    display: inline-block;
     background-color: rgb(211, 3, 114);
     border: 1px solid rgb(194, 2, 104);
     border-radius: 10px;
     padding: 20px;
-    display: inline-block;
     text-align: left;
     margin-bottom: 30px;
 }
@@ -171,14 +280,10 @@ footer {
 .PiePagina__DatoContacto p {
     margin: 10px 0;
     font-size: 0.95rem;
-    font-style: normal;
-    /* Quita la cursiva fea del address */
 }
 
-/* Enlaces del correo y teléfono */
 .PiePagina__DatoContacto a {
     color: rgb(254, 249, 178);
-    /* Tono morado claro para resaltar */
     text-decoration: none;
     transition: color 0.2s ease;
 }
@@ -188,15 +293,43 @@ footer {
     text-decoration: underline;
 }
 
-/* Sección final del Copyright */
 .PiePagina__copyright {
-    border-top: 1px solid rgb(255, 0, 136);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
     padding-top: 15px;
     text-align: center;
 }
 
 .PiePagina__copyright p {
+    margin: 0;
     color: rgb(228, 243, 250);
     font-size: 0.85rem;
-    margin: 0;
+}
+
+/* ---------- 11. CELULAR ---------- */
+@media (max-width: 600px) {
+    .TituloPagina img,
+    .TituloPagina::after {
+        width: 70px;
+    }
+
+    .TituloPagina h1 {
+        font-size: 20px;
+    }
+
+    header h2 {
+        font-size: 28px;
+    }
+
+    main section {
+        padding: 20px;
+    }
+
+    main h2 {
+        font-size: 24px;
+    }
+
+    main p {
+        font-size: 16px;
+        text-align: left;
+    }
 }
