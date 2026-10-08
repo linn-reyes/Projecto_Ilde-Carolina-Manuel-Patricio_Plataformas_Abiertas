@@ -163,7 +163,7 @@ footer {
 }
 
 /* Bloque con los datos de contacto en una cajita elegante */
-.DatoContacto {
+.PiePagina__DatoContacto {
     background-color: rgb(211, 3, 114);
     border: 1px solid rgb(194, 2, 104);
     border-radius: 10px;
