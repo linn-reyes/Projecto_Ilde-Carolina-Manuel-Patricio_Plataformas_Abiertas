@@ -109,19 +109,15 @@ footer {
 
 .TituloPagina__MenuLateral {
     display: flex;
-    /* Usamos flexbox para alinear los elementos */
     justify-content: center;
-    /* Centra los enlaces horizontalmente */
     background-color: rgb(251, 197, 2);
     padding: 10px 0;
-    /* Espaciado vertical */
+    font-family: "Arial", sans-serif
 }
 
 .TituloPagina__MenuLateral a {
     color: rgb(255, 0, 136);
     text-decoration: none;
-    font-family: "Arial", sans-serif;
-
     margin: 0 15px;
     font-size: 18px;
 }
@@ -129,7 +125,6 @@ footer {
 .TituloPagina__MenuLateral a:hover {
     text-decoration: underline;
     color: #fdfcfc;
-    /* Cambia el color al pasar el mouse */
 }
 
 /* Estilos generales del Footer */
