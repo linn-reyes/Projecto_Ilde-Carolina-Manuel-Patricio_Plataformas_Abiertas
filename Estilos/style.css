@@ -1,6 +1,6 @@
 /* Estilos para el contenedor */
 .contenedor-titulo {
-  display: grid;
+  display: grid;                
   grid-template-columns: 1fr auto 1fr; /* 3 columnas: izquierda, centro y derecha */
   align-items: center;                 /* Centra verticalmente ambos elementos */
   background-color: #07013a;
@@ -20,7 +20,7 @@
   grid-column: 2;                      /* Fuerza al texto a ir al centro exacto */
   margin: 0;
   color: #ffffff;
-  font-size: 30px;                     /* Tamaño de fuente más grande */
+  font-size: 50px;                     /* Tamaño de fuente más grande */
   text-align: center;                  /* Centra el texto horizontalmente */
 }
 
@@ -41,7 +41,7 @@
 }
 
 .menu-lateral a:hover {
-  text-decoration: underline;
+  text-decoration: underline;               /* Subraya el enlace al pasar el mouse */
   color: #fdfcfc;                       /* Cambia el color al pasar el mouse */
 }
 
@@ -57,8 +57,7 @@
 /* Contenedor principal que ordena las tarjetas */
 article.contenedor-musica {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Crea la cuadrícula automática */
-  gap: 20px;                                                  /* Separa las tarjetas entre sí */
+  gap: 20px;            /* Separa las tarjetas entre sí */
   padding: 20px;
 }
 
@@ -71,7 +70,6 @@ article.contenedor-musica {
   display: flex;
   flex-direction: column;            /* Acomoda título, texto y botón hacia abajo */
   justify-content: space-between;    /* Alinea el botón al fondo del cuadrito */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 /* Títulos h3 dentro de las tarjetas */
@@ -106,7 +104,6 @@ article.contenedor-musica {
   font-size: 0.85rem;
   text-align: center;
   width: fit-content;               /* El tamaño se ajusta al texto */
-  transition: background-color 0.2s ease;
 }
 
 .boton-mas:hover {
