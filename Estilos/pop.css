@@ -188,7 +188,7 @@ footer {
     transition: color 0.2s ease;
 }
 
-.DatoContacto a:hover {
+.PiePagina__DatoContacto a:hover {
     color: #ffffff;
     text-decoration: underline;
 }
