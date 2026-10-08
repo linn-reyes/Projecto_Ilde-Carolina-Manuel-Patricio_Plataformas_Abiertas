@@ -1,150 +1,89 @@
-:root {
-    --color-fondo: #332121;
-    --color-fondo-oscuro: #0c0c16;
-    --color-superficie: #1d1d33;
-    --color-texto: #e8e8f2;
-    --color-texto-suave: #a9a9c4;
-    --color-acento: #f2b84b;
-    --color-borde: #34345a;
-
-    --fuente-titulos: "Impact", "Arial Black", sans-serif;
-    --fuente-texto: "Segoe UI", Arial, sans-serif;
-
+:root {   
     --ancho-contenido: width: 100%;
 }
 
 .page {
     margin: 0;
-    background-color: var(--color-fondo);
-    color: var(--color-texto);
-    font-family: var(--fuente-texto);
+    background-color: #070624;
+    color: #f2b84b;
+    font-family:sans-serif;
     font-size: 17px;
     line-height: 1.6;
 }
 
-.page__title {
-    margin: 24px 16px;
+.page-title {
     text-align: center;
-    font-family: var(--fuente-titulos);
+    font-family: "Impact";
     font-size: 2.5rem;
-    font-weight: normal;
-    letter-spacing: 1px;
-    color: var(--color-acento);
+    color: #f2b84b;
 }
-
 
 
 .header {
     display: flex;              
     align-items: center;        
-    justify-content: center;    
-    gap: 16px;                  
-    padding: 24px 16px;
-    background-color: var(--color-superficie);
-    border-bottom: 3px solid var(--color-acento);
+    justify-content: center;                  
+    background-color: #161643;
 }
 
-.header__logo {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;         /* lo vuelve circular */
-    object-fit: cover;          /* evita que la imagen se deforme */
-}
-
-.header__title {
-    margin: 0;
-    font-family: var(--fuente-titulos);
-    font-size: 2rem;
-    font-weight: normal;
+.header-title {
+    font-family: "Impact";
     letter-spacing: 2px;
 }
 
-
-/* ---------- 4. BLOQUE: nav (menú de navegación) ---------- */
-.nav {
-    background-color: var(--color-fondo-oscuro);
-}
-
-.nav__list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;            /* si no caben, bajan a otra línea */
-    gap: 8px;
-    margin: 0;
-    padding: 12px;
-}
-
-.nav__link {
-    padding: 8px 16px;
-    border-radius: 6px;
-    color: var(--color-texto);
-    text-decoration: none;      /* quita el subrayado */
-}
-
-.nav__link:hover {
-    background-color: var(--color-acento);
-    color: var(--color-fondo);
-}
-
-
-/* ---------- 5. BLOQUE: gallery (los 3 GIFs) ---------- */
 .gallery {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    
     gap: 16px;
     padding: 16px;
 }
 
 .gallery__img {
     height: 110px;
-    width: auto;                /* el ancho se ajusta solo para no deformar */
+    width: auto;               
     border-radius: 8px;
 }
 
 
-/* ---------- 6. Contenedores centrados (hero, index, content) ----------
-   Les damos el mismo ancho máximo para que todo quede alineado
-   y las líneas de texto no sean demasiado largas. */
+
 .hero,
 .index,
 .content {
     max-width: var(--ancho-contenido);
-    margin: 0 auto;             /* auto a los lados = centrado */
-    padding: 24px 16px;
+    margin: 0 auto;             
 }
 
 
-/* ---------- 7. BLOQUE: hero (bienvenida) ---------- */
 .hero {
     display: flex;
-    flex-direction: column;     /* ahora los hijos se apilan hacia abajo */
+    flex-direction: column;     
     align-items: center;
     text-align: center;
 }
 
-.hero__title {
+.hero-title {
     margin: 0 0 16px;
-    font-family: var(--fuente-titulos);
+    font-family: "Impact";
     font-size: 2rem;
     font-weight: normal;
 }
 
 .hero__text {
     margin: 0 0 24px;
-    color: var(--color-texto-suave);
+    color: #a9a9c4;
 }
 
 .hero__img {
-    max-width: 100%;            /* nunca más ancha que la pantalla */
+    max-width: 100%;            
     height: auto;
     border-radius: 8px;
-    border: 2px solid var(--color-borde);
+    border: 2px solid #34345a;
 }
 
 
-/* ---------- 8. BLOQUE: index (índice) ---------- */
+
 .index__title {
     margin: 0 0 12px;
     font-family: var(--fuente-titulos);
@@ -159,7 +98,7 @@
     gap: 12px;
     margin: 0;
     padding: 0;
-    list-style: none;           /* quita las viñetas */
+    list-style: none;          
 }
 
 .index__link {
@@ -216,20 +155,20 @@
 }
 
 
-/* ---------- 10. BLOQUE: divider (las líneas <hr>) ---------- */
+
 .divider {
     max-width: var(--ancho-contenido);
     margin: 24px auto;
     border: 0;
-    border-top: 1px solid var(--color-borde);
+    border-top: 1px solid #34345a;
 }
 
 
-/* ---------- 11. BLOQUE: footer (pie de página) ---------- */
+
 .footer {
     margin-top: 48px;
     padding: 32px 16px 16px;
-    background-color: var(--color-fondo-oscuro);
+    background-color: #0c0c16;
     border-top: 3px solid var(--color-acento);
 }
 
@@ -251,14 +190,14 @@
 
 .footer__text {
     margin: 0;
-    color: var(--color-texto-suave);
+    color: #a9a9c4;
 }
 
 .footer__contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px 32px;              /* 8px entre filas, 32px entre columnas */
+    gap: 8px 32px;              
     margin-top: 8px;
 }
 
@@ -276,5 +215,5 @@
     margin: 0;
 }
 
-/* Si quieres, en nuestro próximo paso puedo ayudarte
-a sobornar a tu profesor para sacar mejores calificaciones  */
+/* Si quieres, en nuestro procsimo paso puedo ayudarte
+a sobornar a tu profesor para sacar mejores calificaciones xd*/
