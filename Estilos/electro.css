@@ -149,6 +149,7 @@
 }
 
 /* Grid de Tarjetas */
+
 .grid-cuadros {
   display: flex; 
   flex-wrap: wrap; 
@@ -161,6 +162,7 @@
   background-color: #170e49;
   border-radius: 10px;
   padding: 15px;
+
   text-align: center;
   border: 1px solid #2d1d7c;
 }
