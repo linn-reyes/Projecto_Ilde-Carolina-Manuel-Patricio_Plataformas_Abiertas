@@ -3,54 +3,54 @@
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   padding: 20px;
-  background-color: #ffffff; /* Fondo nocturno alineado con tu diseño */
+  background-color: #ffffff; 
   border-radius: 12px;
 }
 
 /* Título principal H2 (un poco más grande que el texto) */
 .seccion-genero h2 {
-  font-size: 1.8rem;               /* Tamaño superior al texto */
-  margin-top: 0;                  /* Sin margen superior para que quede pegado al borde del contenedor */
-  margin-bottom: 15px;            /* Espacio debajo del título */
-  color: #0a004d;                  /* Tono morado claro para destacar */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra ligera para resaltar */
-  text-align: center;               /* Centrado del título */
+  font-size: 1.8rem;              
+  margin-top: 0;                  
+  margin-bottom: 15px;            
+  color: #0a004d;                 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+  text-align: center;               
 }
 
 /* Subtítulo H3 de la navegación */
 .seccion-genero h3 {
-  font-size: 1.3rem;               /* Un poco más pequeño que el h2 pero mayor al p */
+  font-size: 1.3rem;               
   margin-top: 25px;
   margin-bottom: 15px;
-  color: #0a004d;                  /* Mismo tono morado que el h2 */
+  color: #0a004d;                  
 }
 
 /* Párrafos (se mantiene el tamaño de fuente estándar) */
 .seccion-genero p {
   font-size: 1rem;
-  line-height: 1.6;                 /* Mejora la legibilidad */
+  line-height: 1.6;                 
   color: #000000;
   margin-bottom: 12px;
 }
 
 /* Estilos de la lista de subgéneros */
 .nav-subgeneros ul {
-  list-style-type: none;           /* Quita los circulitos/viñetas */
+  list-style-type: none;          
   padding: 0;
   margin: 0;
   display: flex;
-  flex-wrap: wrap;                 /* Si no caben en una línea, se acomodan abajo */
-  gap: 10px;                       /* Espacio horizontal y vertical entre botones */
+  flex-wrap: wrap;                
+  gap: 10px;                      
 }
 
 /* Botones de enlace para los subgéneros */
 .nav-subgeneros a {
   display: inline-block;
-  background-color: #3b0008;       /* Fondo del botón */
+  background-color: #3b0008;     
   color: #ffffff;
-  text-decoration: none;           /* Quita el subrayado azul */
+  text-decoration: none;           
   padding: 8px 16px;
-  border-radius: 20px;             /* Bordes redondeados tipo cápsula */
+  border-radius: 20px;             
   font-size: 0.9rem;
   border: 1px solid #6b0017;
   transition: all 0.2s ease;
@@ -68,9 +68,9 @@
 /* Configuración General */
 .contenido-principal {
   font-family: Arial, Helvetica, sans-serif;
-  color: #14003a;                           /* Color de texto morado oscuro */
-  padding: 20px;                              /* Espaciado interno */
-  background-color: #fcfcfc;                /* Fondo claro para contraste */
+  color: #14003a;                           
+  padding: 20px;                              
+  background-color: #fcfcfc;               
 }
 
 /* --- TARJETAS DE SUBGÉNEROS --- */

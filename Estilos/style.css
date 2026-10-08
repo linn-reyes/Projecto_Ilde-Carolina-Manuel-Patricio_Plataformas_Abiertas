@@ -4,6 +4,7 @@
   grid-template-columns: 1fr auto 1fr; 
   align-items: center;                
   padding: 10px 20px;
+    background-color: #030561; 
 }
 
 /* Estilos para la imagen */
@@ -11,7 +12,7 @@
   width: 150px;
   height: auto;
   grid-column: 1;                      
-  justify-self: start;                 
+  justify-self: start;                
 }
 
 /* Estilos para el Título */
@@ -41,7 +42,7 @@
 
 .menu-lateral a:hover {
   text-decoration: underline;              
-  color: #fdfcfc;                      
+  color: #0a0041;                      
 }
 
 /* Estilos para el contenido principal */
