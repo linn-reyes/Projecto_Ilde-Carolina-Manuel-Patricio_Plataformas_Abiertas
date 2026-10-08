@@ -13,7 +13,7 @@
 
 <body>
   <audio autoplay>
-    <source src="../Musica/respite.mp3" type="audio/mpeg">
+   <!-- <source src="../Musica/respite.mp3" type="audio/mpeg"> -->
   </audio>
   <!--Enlace a la página principal-->
   <!-- Titulo de página -->
@@ -38,12 +38,12 @@
   </header>
   <hr>
   <br>
-  <section>
+  <section class="Proximos__Conciertos">
     <h3>Próximos Conciertos:</h3>
     <span>Selecciona una fecha para ver los conciertos programados.</span>
     <br>
     <input type="date" id="fechaConcierto">
-    <div id="resultado"></div>
+    <div id="Proximos__Conciertos__Resultado"></div>
     <script>
       const conciertos = [
         {
