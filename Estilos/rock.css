@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(57, 3, 3);
+    color: white;
+}
+
+a {
+    color: rgb(135, 135, 7);
+    text-decoration: underline;
+}
