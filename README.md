@@ -5,7 +5,7 @@ Nombre: OYENTES DESVELADOS
 Este es un sitio web dedicado a los oyentes que disfrutan de la música y el entretenimiento nocturno.
 Aquí te explicamos algunos de los géneros que existen, al igual los subgéneros de estos. 
 
-El contenido es oferecerte una introducción de esta misma, cuándo empezo estos generos, algunas de las canciones reconocidas. No solo eso, te puedes inscribir a los eventos que se encuentren disponibles, mercancías de discos y en línea.
+El contenido es oferecerte una introducción de esta misma, la historia estos generos, algunas de las canciones reconocidas. No solo eso, te puedes inscribir a los eventos que se encuentren disponibles, mercancías de discos y en línea.
 
 ### 3. Tecnologías utilizadas
 Lenguajes:
@@ -55,6 +55,8 @@ Abre el archivo `index.html` en tu navegador
 - Elementos multimedia e interactividad: Inclusión de reproducción de audio de fondo con la etiqueta <audio autoplay>, catálogos de tiendas externas con apertura en pestañas independientes (target="_blank"), y scripts interactivos de filtrado por fechas utilizando JavaScript en la sección de eventos.  
 
 - Consistencia de marca e identidad: Uso recurrente del pie de página (footer) con datos institucionales de contacto (correo electrónico, teléfono y dirección) e hipervínculos hacia recursos visuales y hojas de estilo compartidas.  
+
+- Uso de estilos mediante CSS externo: mayor parte de las páginas contienen su propio archivo .CSS que permite personalización para todos los autores.
 
 ## Autores
 
